@@ -213,8 +213,19 @@
     }
 
 
-    .contact-info a{
-        flex-wrap:wrap;
+     .contact-info a{
+        flex-wrap:nowrap;
+        align-items:center;
+        gap:12px;
+        font-size:14px;
+        white-space:nowrap;
+    }
+
+    .contact-info a svg{
+        width:40px;
+        height:40px;
+        padding:10px;
+        flex-shrink:0;
     }
 
 

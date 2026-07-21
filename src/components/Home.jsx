@@ -30,11 +30,13 @@ const Home = () => {
 
             {/* Resume Button */}
             <a
-              href="/Updated_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Updated_Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button>See My Resume »</button>
+              <button>
+                See My Resume »
+              </button>
             </a>
 
             {/* Projects Button */}
