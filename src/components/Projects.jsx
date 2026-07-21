@@ -35,8 +35,8 @@ const Projects = () => {
             description:
                 "A personal responsive portfolio website to showcase my skills, projects and experience.",
             tech: "React.js",
-            github: "#",
-            live: "#"
+            github: "https://github.com/Avinashkumar18945/My_React.js_Portfolio",
+            live: "https://avinashkumar18945.github.io/My_React.js_Portfolio/"
         }
     ];
 
