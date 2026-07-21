@@ -5,6 +5,10 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaServer, FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { FaTools, FaGitAlt, FaFigma } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { SiGithub, SiNpm, SiVercel } from "react-icons/si";
+import { SiIntellijidea } from "react-icons/si";
 
 import {
   FaCode,
@@ -96,44 +100,42 @@ const Skills = () => {
 
           {/* Backend Development */}
 
-{/* Backend Development */}
+          <div className="skills-card">
 
-<div className="skills-card">
+            <div className="skill-title">
+              <div className="icons">
+                <FaServer />
+              </div>
 
-  <div className="skill-title">
-    <div className="icons">
-      <FaServer />
-    </div>
+              <h3>Backend Development</h3>
+            </div>
 
-    <h3>Backend Development</h3>
-  </div>
+            <p>
+              I build scalable server-side applications and REST APIs using
+              modern backend technologies with clean architecture and efficient
+              backend development practices.
+            </p>
 
-  <p>
-    I build scalable server-side applications and REST APIs using
-    modern backend technologies with clean architecture and efficient
-    backend development practices.
-  </p>
+            <div className="skill-list">
 
-  <div className="skill-list">
+              <div className="skill-item">
+                <FaNodeJs className="node" />
+                <span>Node.js</span>
+              </div>
 
-    <div className="skill-item">
-      <FaNodeJs className="node" />
-      <span>Node.js</span>
-    </div>
+              <div className="skill-item">
+                <SiExpress className="express" />
+                <span>Express.js</span>
+              </div>
 
-    <div className="skill-item">
-      <SiExpress className="express" />
-      <span>Express.js</span>
-    </div>
+              <div className="skill-item">
+                <SiMongodb className="skill-icon mongodb" />
+                <span>MongoDB</span>
+              </div>
 
-    <div className="skill-item">
-  <SiMongodb className="skill-icon mongodb" />
-  <span>MongoDB</span>
-</div>
+            </div>
 
-  </div>
-
-</div>
+          </div>
 
           {/* UI Framework */}
 
@@ -167,55 +169,107 @@ const Skills = () => {
 
           </div>
 
-          {/* Programming Languages */}
+          {/* Tools & Technologies */}
 
           <div className="skills-card">
 
             <div className="skill-title">
               <div className="icons">
-                <FaCode />
+                <FaTools />
               </div>
 
-              <h3>Programming Languages</h3>
+              <h3>Tools & Technologies</h3>
             </div>
 
             <p>
-              I use different programming languages to build applications,
-              solve programming problems, and strengthen my DSA concepts.
+              I use modern development tools to design, develop, deploy, and manage
+              web applications efficiently throughout the software development lifecycle.
             </p>
 
             <div className="skill-list">
 
               <div className="skill-item">
-                <FaCuttlefish className="c" />
-                <span>C</span>
+                <VscVscode className="vscode" />
+                <span>VS Code</span>
               </div>
 
               <div className="skill-item">
-                <SiCplusplus className="cpp" />
-                <span>C++</span>
+                <FaGitAlt className="git" />
+                <span>Git</span>
               </div>
 
               <div className="skill-item">
-                <FaPython className="python" />
-                <span>Python</span>
+                <SiGithub className="github" />
+                <span>GitHub</span>
               </div>
 
               <div className="skill-item">
-                <FaJava className="java" />
-                <span>Java</span>
+                <FaFigma className="figma" />
+                <span>Figma</span>
               </div>
 
               <div className="skill-item">
-                <SiJavascript className="js" />
-                <span>JavaScript</span>
+                <SiVercel className="vercel" />
+                <span>Vercel</span>
               </div>
 
               <div className="skill-item">
-                <PiTreeStructureFill className="dsa" />
-                <span>Data Structures</span>
+                <SiIntellijidea className="intellij" />
+                <span>IntelliJ IDEA</span>
               </div>
+            </div>
 
+          </div>
+
+        </div>
+
+        {/* Programming Languages */}
+
+        <div className="skills-card">
+
+          <div className="skill-title">
+            <div className="icons">
+              <FaCode />
+            </div>
+
+            <h3>Programming Languages</h3>
+          </div>
+
+          <p>
+            I use different programming languages to build applications,
+            solve programming problems, and strengthen my DSA concepts.
+          </p>
+
+          <div className="skill-list">
+
+            <div className="skill-item">
+              <FaCuttlefish className="c" />
+              <span>C</span>
+            </div>
+
+            <div className="skill-item">
+              <SiCplusplus className="cpp" />
+              <span>C++</span>
+            </div>
+
+            <div className="skill-item">
+              <FaPython className="python" />
+              <span>Python</span>
+            </div>
+
+            <div className="skill-item">
+              <FaJava className="java" />
+              <span>Java</span>
+            </div>
+
+            <div className="skill-item">
+              <SiJavascript className="js" />
+              <span>JavaScript</span>
+            </div>
+
+            <div className="skill-item">
+              <PiTreeStructureFill className="dsa" />
+              <span>Data Structures</span>
             </div>
 
           </div>
@@ -223,7 +277,7 @@ const Skills = () => {
         </div>
 
       </div>
-    </section>
+    </section >
   );
 };
 

@@ -228,6 +228,30 @@
     color:#47A248;
 }
 
+.vscode{
+    color:#007ACC;
+}
+
+.git{
+    color:#F1502F;
+}
+
+.github{
+    color:#181717;
+}
+
+.figma{
+    color:#F24E1E;
+}
+
+.vercel{
+    color:#000000;
+}
+
+.intellij{
+    color:#FE315D;
+}
+
 /* Tablet */
 
 @media (max-width: 768px){
