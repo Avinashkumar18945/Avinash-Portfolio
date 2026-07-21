@@ -1,0 +1,350 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#F5F6F8,#E9EDF1,#DCE1E7);
+}
+
+
+.home{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    padding:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+
+    background:radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.info{
+    flex:1;
+}
+
+.info span{
+    display:inline-block;
+    background:#EEF4FF;
+    color:#2563EB;
+    padding:8px 18px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.info h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:1.1;
+    margin:12px 0;
+}
+
+.info h2{
+    color:#2563EB;
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.info p:last-of-type{
+    max-width:560px;
+    line-height:1.9;
+    color:#555;
+    font-size:18px;
+    padding-bottom:35px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+    display:flex;
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.btn button{
+    padding:15px 28px;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.btn a:first-child button{
+    background:#2563EB;
+    color:white;
+}
+
+.btn button:last-child{
+    background:white;
+    color:#2563EB;
+    border:2px solid #2563EB;
+}
+
+.btn button:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(37,99,235,.25);
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons{
+    display:flex;
+    gap:18px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.social-icons a:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.social-icons img{
+    width:28px;
+    height:28px;
+}
+
+/* ================= IMAGE ================= */
+
+.image{
+    width:350px;
+    flex-shrink:0;
+    border: 2px solid gray;
+    border-radius:30px;
+    overflow:hidden;
+
+    background:radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.12);
+
+    transition:.4s;
+}
+
+.image:hover{
+    transform:translateY(-10px);
+}
+
+.image img{
+    width:100%;
+    display:block;
+    transition:.5s;
+}
+
+.image:hover img{
+    transform:scale(1.03);
+}
+
+/* ================= SHOWCASE ================= */
+
+.show-case{
+
+    width:100%;
+    margin-top:60px;
+
+    display:flex;
+    gap:25px;
+}
+
+.show-case p{
+
+    flex:1;
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.show-case p:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+/* ================= DATETIME ================= */
+
+.datetime{
+    width:fit-content;
+    margin:20px auto;
+    text-align:center;
+}
+
+.datetime h3{
+    margin:0;
+    font-size:17px;
+    font-weight:500;
+}
+
+.datetime p{
+    margin-top:8px;
+    font-size:16px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.home{
+
+padding:40px 25px;
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.info{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.info h1{
+
+font-size:48px;
+
+}
+
+.info h2{
+
+font-size:26px;
+
+}
+
+.info p:last-of-type{
+
+max-width:100%;
+
+}
+
+.btn{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.btn button{
+
+width:100%;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.image{
+
+width:300px;
+
+}
+
+.show-case{
+
+flex-direction:column;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.home{
+
+padding:25px 18px;
+
+}
+
+.info h1{
+
+font-size:38px;
+
+}
+
+.info h2{
+
+font-size:22px;
+
+}
+
+.info p:last-of-type{
+
+font-size:16px;
+
+}
+
+.image{
+
+width:250px;
+
+}
+
+.social-icons a{
+
+width:48px;
+
+height:48px;
+
+}
+
+.show-case p{
+
+font-size:16px;
+
+padding:22px;
+
+}
+
+}

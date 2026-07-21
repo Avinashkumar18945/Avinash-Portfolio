@@ -1,0 +1,174 @@
+.contact{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.contact-container{
+    padding:60px;
+    border-radius:25px;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(0,0,0,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.contact-container h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+    font-weight:700;
+}
+
+.contact-container h2 span{
+    color:#ff3b5c;
+}
+
+.contact-content{
+    display:flex;
+    justify-content:space-between;
+    gap:70px;
+    flex-wrap:wrap;
+}
+
+.contact-left{
+    flex:1;
+    min-width:320px;
+}
+
+.contact-left p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:35px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.contact-info a{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    transition:.35s;
+}
+
+.contact-info a svg{
+    width:48px;
+    height:48px;
+    padding:12px;
+    border-radius:50%;
+    background:#ff3b5c;
+    color:#fff;
+    font-size:22px;
+    transition:.35s;
+}
+
+.contact-info a:hover{
+    color:#ff3b5c;
+    transform:translateX(8px);
+}
+
+.contact-info a:hover svg{
+    transform:rotate(8deg) scale(1.08);
+}
+
+.contact-right{
+    flex:1;
+    min-width:340px;
+}
+
+.contact-right form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.contact-right input,
+.contact-right textarea{
+
+    width:100%;
+    padding:18px 20px;
+    border:none;
+    outline:none;
+    border-radius:16px;
+    background:#f7f7f7;
+    font-size:16px;
+    transition:.35s;
+    border:2px solid transparent;
+}
+
+.contact-right textarea{
+    resize:none;
+    min-height:170px;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus{
+
+    background:#fff;
+    border-color:#ff3b5c;
+    box-shadow:0 0 20px rgba(255,59,92,.18);
+}
+
+.contact-right button{
+
+    width:220px;
+    padding:16px;
+    border:none;
+    border-radius:50px;
+    background:#ff3b5c;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.contact-right button:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(255,59,92,.35);
+}
+
+@media(max-width:900px){
+
+.contact-container{
+
+padding:40px 25px;
+
+}
+
+.contact-content{
+
+flex-direction:column;
+
+gap:50px;
+
+}
+
+.contact-container h2{
+
+font-size:34px;
+
+}
+
+.contact-right button{
+
+width:100%;
+
+}
+
+.contact-info a{
+
+font-size:16px;
+
+}
+
+}

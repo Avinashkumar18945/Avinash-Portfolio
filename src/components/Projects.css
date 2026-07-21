@@ -1,0 +1,241 @@
+.projects{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:80px auto;
+
+    padding:60px 45px;
+
+    border-radius:25px;
+
+    /* border:2px solid rgba(0,0,0,.15); */
+
+    background:
+    radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );
+
+}
+
+
+
+#projects h2{
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-bottom:40px;
+
+    color:#222;
+
+}
+
+
+
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+.project-card{
+
+    background:radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );;
+
+    border: 1px solid gray;
+    border-radius:20px;
+
+    overflow:hidden;
+
+
+
+    transition:.3s;
+
+}
+
+
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+.project-card img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+.project-content{
+
+    padding:20px;
+
+}
+
+
+
+.project-content h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.project-content p{
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#555;
+
+}
+
+
+
+.project-content span{
+
+    display:flex;
+    margin-top:15px;
+    font-size:14px;
+    font-weight:600;
+    color:#555;
+    gap: 15px;
+
+}
+
+
+
+
+
+.project-btn{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+.project-btn a{
+
+    text-decoration:none;
+    padding:8px 18px;
+    border: 1px solid gray;
+    border-radius:20px;
+    background:lightblue;
+    color:black;
+    font-size:14px;
+    transition:.3s;
+
+}
+
+
+
+.project-btn a:hover{
+
+    transform:translateY(-3px);
+
+}
+.projects-intro{
+
+    max-width:750px;
+
+    margin:0 auto 40px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    color:#555;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:900px){
+
+    .projects-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:600px){
+
+    .projects{
+
+        width:95%;
+
+        padding:40px 20px;
+
+    }
+
+
+    .projects-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .projects h2{
+
+        font-size:28px;
+
+    }
+
+}

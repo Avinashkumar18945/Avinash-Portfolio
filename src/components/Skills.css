@@ -1,0 +1,439 @@
+.skills{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.skills-container{
+    padding:60px 45px;
+    border-radius:24px;
+    /* border:2px solid rgba(0,0,0,.15); */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background:radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );;
+}
+
+.skills-container h2{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:18px;
+}
+
+.skills-container>p{
+    max-width:720px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:45px;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 768px){
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card */
+
+.skills-card{
+
+    background:radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );;
+    
+    border: 1px solid gray;
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.skills-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:
+    0 20px 35px rgba(0,0,0,.12);
+
+}
+
+/* Heading */
+
+.skill-title{
+    display: flex;
+    align-items: center;      /* icon aur text same line me */
+    gap: 15px;
+
+    width: fit-content;
+    padding: 12px 18px;
+
+    border: 1px solid gray;
+    border-radius: 14px;
+    background: rgba(249, 247, 247, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.skill-title h3{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    white-space: normal;
+    word-break: break-word;      /* text next line me nahi jayega */
+}
+
+.icons{
+    width: 55px;
+    height: 55px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+    background:#fff;
+
+    font-size:28px;
+    color:#00d4ff;
+
+    flex-shrink:0;            /* icon chhota nahi hoga */
+}
+
+/* Description */
+
+.skills-card p{
+    padding: 15px 0px 0px 0px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* Skills */
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 18px;
+    border-radius:12px;
+    background:white;
+    border:1px solid rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.skill-item:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    background:#fff;
+}
+
+.skill-item svg{
+
+    font-size:26px;
+}
+
+.skill-item span{
+
+    font-weight:600;
+
+    color:#333;
+}
+
+/* Icon Colors */
+
+.html{
+
+    color:#E34F26;
+}
+
+.css{
+
+    color:#1572B6;
+}
+
+.js{
+
+    color:#F7DF1E;
+}
+
+.react{
+
+    color:#61DAFB;
+}
+
+.responsive{
+
+    color:#00E5FF;
+}
+
+.figma{
+    color:#a259ff;
+}
+
+.canva{
+    color:#00c4cc;
+}
+
+.wireframe{
+    color:#3b82f6;
+}
+
+.prototype{
+    color:#ff6b6b;
+}
+
+.responsive{
+    color:#00d4ff;
+}
+
+.bootstrap{
+    color:#7952B3;
+}
+
+.tailwind{
+    color:#06B6D4;
+}
+
+.mongodb{
+    color:#47A248;
+}
+
+/* Tablet */
+
+@media (max-width: 768px){
+
+.skills-grid{
+    grid-template-columns:1fr;
+}
+
+.skill-title{
+    width:100%;
+    padding:12px;
+    gap:10px;
+}
+
+.skill-title h3{
+    font-size:20px;
+    white-space:normal;
+}
+
+.skill-list{
+    flex-direction:column;
+}
+
+.skill-item{
+    width:100%;
+    justify-content:flex-start;
+    padding:10px 12px;
+}
+
+.skill-item span{
+    font-size:15px;
+}
+
+.mini-progress{
+    flex:1;
+    max-width:100px;
+    min-width:60px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.skills{
+
+    width:95%;
+}
+
+.skills-container{
+
+    padding:30px 18px;
+}
+
+.skills-container h2{
+
+    font-size:30px;
+}
+
+.skills-container>p{
+
+    font-size:15px;
+}
+
+.skill-title{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.icons{
+
+    width:52px;
+
+    height:52px;
+
+    font-size:24px;
+}
+
+.skill-title h3{
+
+    font-size:18px;
+}
+
+.skill-item{
+
+    padding:12px;
+}
+
+.skill-item svg{
+
+    font-size:22px;
+}
+
+.skill-item span{
+
+    font-size:14px;
+}
+
+}
+
+.programming-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.program-item{
+    width:100%;
+}
+
+.program-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.program-header span:first-child{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.program-header svg{
+    font-size:22px;
+}
+
+.progress{
+    width:100%;
+    height:10px;
+    background:#e4e4e4;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    border-radius:20px;
+}
+
+/* Width */
+
+.c-fill{
+    width:80%;
+    background:#3b82f6;
+}
+
+.cpp-fill{
+    width:85%;
+    background:#2563eb;
+}
+
+.python-fill{
+    width:70%;
+    background:#3776AB;
+}
+
+.java-fill{
+    width:85%;
+    background:#f89820;
+}
+
+.js-fill{
+    width:90%;
+    background:#F7DF1E;
+}
+
+.dsa-fill{
+    width:75%;
+    background:#8B5CF6;
+}
+
+/* Icon Colors */
+
+.c{
+    color:#3b82f6;
+}
+
+.cpp{
+    color:#2563eb;
+}
+
+.python{
+    color:#3776AB;
+}
+
+.java{
+    color:#f89820;
+}
+
+.js{
+    color:#F7DF1E;
+}
+
+.dsa{
+    color:#8B5CF6;
+}
+
+.node {
+    color: #339933; /* Node.js Green */
+}
+
+.express{
+    color: #000000;
+}
+

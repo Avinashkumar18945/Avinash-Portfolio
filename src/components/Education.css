@@ -1,0 +1,148 @@
+.education{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.education-container{
+    padding:50px;
+    border-radius:25px;
+    /* border:2px solid gray; */
+    background:radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );;
+}
+
+.education-container h2{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.education-container>p{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 45px;
+    line-height:1.8;
+    color:#555;
+}
+
+.education-cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.card{
+    background:radial-gradient(
+        circle at 50% 35%,
+        #E1E7ED 0%,
+        #D2DAE2 35%,
+        #C1CBD4 70%,
+        #AFBBC5 100%
+    );;
+    border-radius:18px;
+    padding:30px 25px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border: 1px solid gray;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    min-height:240px;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(165,61,255,.2);
+}
+
+.icon{
+    width:50px;
+    height:50px;
+    border-radius:20px;
+    border: gray solid 1px;
+    background: whitesmoke;
+    color:#FF7A00;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:18px;
+
+    word-break:break-word;
+}
+
+.card span{
+    color:black;
+    font-weight:600;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px ;
+    background:rgba(255,255,255,0.65);
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+    .education-container{
+        padding:35px 20px;
+    }
+
+    .education-cards{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        min-height:auto;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+    .education{
+        width:95%;
+    }
+
+    .education-container h2{
+        font-size:30px;
+    }
+
+    .card{
+        padding:25px 18px;
+    }
+
+    .icon{
+        width:60px;
+        height:60px;
+        font-size:26px;
+    }
+
+    .card h3{
+        font-size:20px;
+    }
+
+}
